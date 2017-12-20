@@ -11,6 +11,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(UsersTableSeeder::class);
+        /**
+         * Só utilizei o RepliesTableSeeder pois nele já vai ser criado as threads, usuários e respostas.
+         */
+        $this->call(RepliesTableSeeder::class);
     }
 }
