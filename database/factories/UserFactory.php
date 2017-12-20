@@ -34,7 +34,7 @@ $factory->define(App\Thread::class, function (Faker $faker) {
     ];
 });
 
-$factory->define(App\Replies::class, function (Faker $faker) {
+$factory->define(App\Reply::class, function (Faker $faker) {
     return [
         'body' => $faker->paragraph,
         'user_id' => function () {

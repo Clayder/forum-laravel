@@ -13,7 +13,7 @@ class UsersTableSeeder extends Seeder
     {
         $threads = factory(\App\Thread::class, 50)->create();
         $threads->each(function($thread){
-            factory(\App\Replies::class, rand(5,10))->create(['thread_id' => $thread->id]);
+            factory(\App\Reply::class, rand(5,10))->create(['thread_id' => $thread->id]);
         });
     }
 }
