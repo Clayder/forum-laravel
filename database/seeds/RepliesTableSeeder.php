@@ -11,6 +11,16 @@ class RepliesTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\User::class, 50)->create();
+        /**
+         * Crio 50 tópicos
+         */
+        $threads = factory(\App\Thread::class, 50)->create();
+
+        /**
+         * Para cada tópico eu insiro entre 5 e 10 respostas
+         */
+        $threads->each(function ($thread){
+            factory(\App\Reply::class, rand(5, 10))->create(['thread_id' => $thread->id]);
+        });
     }
 }
