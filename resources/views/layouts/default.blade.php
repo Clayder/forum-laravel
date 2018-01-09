@@ -9,17 +9,17 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        @include('layouts.default.header')
-    </header>
-    <main>
-        @yield('content')
-    </main>
+<header>
+    @include('layouts.default.header')
+</header>
+<main>
+    @yield('content')
+</main>
 
-    @include('layouts.default.footer')
+@include('layouts.default.footer')
 
-   @component('layouts.default.body_scripts')
-       @yield('scripts')
-   @endcomponent
+@component('layouts.default.body_scripts')
+    @yield('scripts')
+@endcomponent
 </body>
 </html>
