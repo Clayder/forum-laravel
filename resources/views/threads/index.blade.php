@@ -5,3 +5,7 @@
         <example>Carregando</example>
     </div>
 @endsection
+
+@section('scripts')
+    <script src="/js/threads.js"></script>
+@endsection

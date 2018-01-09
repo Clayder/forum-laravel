@@ -18,9 +18,8 @@
 
     @include('layouts.default.footer')
 
-    <script src="/js/manifest.js"></script>
-    <script src="/js/vendor.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/js/threads.js"></script>
+   @component('layouts.default.body_scripts')
+       @yield('scripts')
+   @endcomponent
 </body>
 </html>
