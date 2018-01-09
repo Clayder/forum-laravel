@@ -9,7 +9,14 @@
     <title>Document</title>
 </head>
 <body>
-    @yield('content')
+    <header>
+        @include('layouts.default.header')
+    </header>
+    <main>
+        @yield('content')
+    </main>
+
+    @include('layouts.default.footer')
 
     <script src="/js/manifest.js"></script>
     <script src="/js/vendor.js"></script>
