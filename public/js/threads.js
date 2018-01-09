@@ -96,6 +96,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -119,7 +136,31 @@ var staticRenderFns = [
       _c("div", { staticClass: "card-content" }, [
         _c("span", { staticClass: "card-title" }, [_vm._v(" Threads ")]),
         _vm._v(" "),
-        _c("p", [_vm._v("Content")])
+        _c("table", [
+          _c("thead", [
+            _c("tr", [
+              _c("th", [_vm._v("#")]),
+              _vm._v(" "),
+              _c("th", [_vm._v("Thread")]),
+              _vm._v(" "),
+              _c("th", [_vm._v("Reply")]),
+              _vm._v(" "),
+              _c("th")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("tbody", [
+            _c("tr", [
+              _c("td", [_vm._v("1")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("Tópico")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("3")]),
+              _vm._v(" "),
+              _c("td")
+            ])
+          ])
+        ])
       ])
     ])
   }

@@ -14,7 +14,9 @@
     @include('layouts.default.header')
 </header>
 <main>
-    @yield('content')
+    <section id="app">
+        @yield('content')
+    </section>
 </main>
 
 @include('layouts.default.footer')

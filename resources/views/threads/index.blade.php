@@ -1,7 +1,8 @@
 @extends('layouts.default')
 
 @section('content')
-    <div id="app">
+    <div class="container">
+        <h3> {{ __('Most rescent theads') }} </h3>
         <threads>Carregando</threads>
     </div>
 @endsection
