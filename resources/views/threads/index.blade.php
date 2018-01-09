@@ -2,7 +2,7 @@
 
 @section('content')
     <div id="app">
-        <example>Carregando</example>
+        <threads>Carregando</threads>
     </div>
 @endsection
 
